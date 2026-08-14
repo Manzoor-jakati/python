@@ -37,3 +37,28 @@ for item in target_dir.iterdir():
             print(f"Moved {item.name} -> {category}")
             break
 
+# PS C:\Python Final> python -u "c:\Python Final\python\task1.py"
+# Traceback (most recent call last):
+#   File "c:\Python Final\python\task1.py", line 15, in <module>
+#     target_dir = path.home() / "Desktop" / "TestFolder"
+# PS C:\Python Final> python -u "c:\Python Final\python\task1.py"
+# Traceback (most recent call last):
+#   File "c:\Python Final\python\task1.py", line 15, in <module>
+#     target_dir = path.home() / "Desktop" / "TestFolder"
+# AttributeError: module 'pathlib' has no attribute 'home'
+# PS C:\Python Final> python -u "c:\Python Final\python\task1.py"
+#   File "c:\Python Final\python\task1.py", line 15
+#     target_dir = path.C:() / "Desktop" / "TestFolder"
+#                        ^
+# SyntaxError: invalid syntax
+# PS C:\Python Final> python -u "c:\Python Final\python\task1.py"
+# Traceback (most recent call last):
+#   File "c:\Python Final\python\task1.py", line 15, in <module>
+#     target_dir = path.C() / "Desktop" / "TestFolder"
+# AttributeError: module 'pathlib' has no attribute 'C'
+# PS C:\Python Final> python -u "c:\Python Final\python\task1.py"
+#   File "c:\Python Final\python\task1.py", line 15
+#     target_dir = path.Local Disk (C:)() / "Desktop" / "TestFolder"
+#                             ^^^^
+# SyntaxError: invalid syntax
+# PS C:\Python Final> 
