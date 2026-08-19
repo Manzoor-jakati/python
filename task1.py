@@ -21,7 +21,7 @@ for item in target_dir.iterdir():
     file_ext = item.suffix.lower()
 
     # 6. Assume the file is unknown
-    category = "Other"
+    category = "Others"
 
     # 7. Check which category the extension belongs to
     for folder, extensions in DIRECTORIES.items():
